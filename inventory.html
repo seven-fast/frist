@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>售货机大数据分析平台</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+</head>
+<body>
+<div class="header">
+  <div class="sysName">
+    <h1 class="tit">售货机大数据分析平台</h1>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="total.html">总数据</a></li>
+      <li><a href="sale.html">销售分析</a></li>
+      <li class="sysnameN"></li>
+      <li class="on"><a href="inventory.html">库存分析</a></li>
+      <li><a href="user.html">用户分析</a></li>
+    </ul>
+  </div>
+</div>
+<div class="chartWarp inventoryWarp">
+
+  <div class="pure-g int-row1"> 
+    <!-- 存销量 -->
+    <div class="pure-u-1-3">
+      <!-- 设备容量 -->
+      <div class="chartBlock h55">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">设备容量</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="mVolume" class="chartDiv"></div>
+        </div>
+      </div>
+      <!-- 品类库存占比 -->
+      <div class="chartBlock h45">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">品类库存占比</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="categoryStock" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-3">
+      <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">存销量</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="stockSales" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-3"> 
+      <!-- 商品存货周转天数 -->
+      <div class="chartBlock h55">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">商品存货周转天数</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="turnaround" class="chartDiv"></div>
+        </div>
+      </div>
+      <!-- 滞销商品 -->
+      <div class="chartBlock h45">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">滞销商品</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="unsalable" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script language="javascript" type="text/javascript" src="js/echarts.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script language="javascript" type="text/javascript" src="js/charts.int.js"></script>
+</html>

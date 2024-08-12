@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>售货机大数据分析平台</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+</head>
+<body>
+<div class="header">
+  <div class="sysName">
+    <h1 class="tit">售货机大数据分析平台</h1>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="total.html">总数据</a></li>
+      <li class="on"><a href="sale.html">销售分析</a></li>
+      <li class="sysnameN"></li>
+      <li><a href="inventory.html">库存分析</a></li>
+      <li><a href="user.html">用户分析</a></li>
+    </ul>
+  </div>
+</div>
+<div class="chartWarp saleWarp">
+  <div class="pure-g sale-row1">
+    <div class="pure-u-1-4">
+      <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">销售金额（元）</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="saleM_Site" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-4">
+      <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">订单量（个）</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="orderQ_Site" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-4">
+      <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">毛利润（元）</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="grossM_Site" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-4">
+      <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">客单价（元）</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="unitP_Site" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pure-g sale-row2">
+    <div class="pure-u-1-4">
+		  <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">销售金额预测值与实际值</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="saleAll" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+		  <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">商品价格区间</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="priceRange" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-4">
+		  <div class="chartBlock">
+        <div class="hd">
+          <div class="chartTit">
+            <h2 class="titContent">商品销售数量前10名</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div id="saleMtop10" class="chartDiv"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+<script language="javascript" type="text/javascript" src="js/echarts.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script language="javascript" type="text/javascript" src="js/charts.sale.js"></script> 
+</html>
